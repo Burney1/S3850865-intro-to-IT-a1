@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Claira Burn</title>
+  </head>
+  <body>
+    <div class="header" id="myHeader">
+
+
+      <a href="index.html">Home</a>
+
+      <a href="personal_info.html">Personal Information</a>
+      <a href="interest_iniT.html">Interest in IT</a>
+      <a href="ideal_job.html">Ideal Job</a>
+      <a href="personal_profile.html">Personal Profile</a>
+      <a href="project.html", style="font-style: italic; text-decoration: underline;">Project Idea</a>
+
+
+  </div>
+
+  <nav>
+  <p>
+    <i>Overview</i><br>
+    The project is an internet filtering system that can be integrated into any modern web browser. Its main purpose is to filter content similar to classic child locks, but for the internet. It uses deep searches to match content and user preferences to prevent spoilers to TV shows, offensive content or fake news by building an identity profile around the user, and other customisations. Similar to how many code editors are ‘hackable’, I want to make the internet more ‘hackable’ from a visual and content perspective (not an illegal one). The potential of this project suggests a wide user demographic and could be quite relevant to the current state of the internet.
+    <br><br>
+    <i>Motivation</i><br>
+    I think my personality within the group will be quite introverted as they fit into the description of people I don’t know but might see again. The 76% agreeableness I do think is relevant to how I will behave in a group because with a group of people that I am not comfortable with I am less likely to assert my opinion if it differs from the rest of the group. The Myers-Briggs test said I am 60% observant and I think this will be present within my ability to observe group members and their ideas. By hopefully recognising other’s ideas, I can help collaboration and creativity. I think I will work well within the group if we have a clear understanding and a visual representation of what needs to be completed.
+    <br><br>
+    <i>Description</i><br>
+    The basic view of the service is essentially giving the user more control over content they see on the internet. In practice, the product would allow the user to filter the internet to their preferences, whether that's to censor content they find offensive or illicit. This system would be integrated as a web browser extension filter that allows users to filter out as much HTML content as they want to. Such as, blurring images from shows that the user inputted they're currently watching, preventing spoilers. Another use case is reading and fact checking articles before displaying it to the user. This could work through scripts that match words and links across the web to reach a standard of 80% validity or user input.
+<br><br>
+    The user experience should be simple and is essential to its adoption from users. The interface would ideally have a large on/off button that uses green and red to signify status. The overlay of the GUI would appear when selected in extensions on the browser. It would include user basics such as preferences and account settings, as well as privacy preferences. Hopefully, the user experience is written well on a software end and loads quickly. It would also be important to include accessibility options for both the GUI and the functionality to improve the internet for the users. Such as universal colour settings for colour blind users since some websites don't offer the bare minimum. The storytelling in the UX should be catering to all users, and seem friendly. This works by establishing user personas and building the system around what they would theoretically want. Examples could be users with disabilities (flashing lights and epillectic users), parents, regular users, and individuals with information sensory issues.
+<br><br>
+    Using JavaScript, HTML filtering will be the main feature that impacts the user’s web experience. This works since HTML is presented and becomes static once loaded, html code itself can’t manipulate itself the same way other programs can run scripts and manipulate data. Thanks to this staticity, JavaScript is able to manipulate content and the same applies to its effect on CSS. With that being said, the potential for users is almost limitless. As such, the system would have built in shortcuts and would allow the user to customise what gets altered when enabled. They could pre-save these options as presets for regular use. This kind of functionality would be greatly helpful for epilleptic users who can have seizures triggered from flashing lights. By setting a preset, they can prevent the web page from changing colours quickly and then prompt the user that the source code is intended to do that and whether they want to proceed. Using the user-profiling, scripts can be run against images of the page to see whether they match characters from tv shows and then blur out the image and present the user with a page warning. The same applies with the machine learning deep search API that can identify language choice to determine whether an article is safe to read.
+
+
+    <br><br>
+    <i>Tools and Technologies</i><br>
+    Developing the software doesn't require any intense machinery and just a regular laptop will work using a regular text editor or IDE. However, integrating open source API’s for deep web searching and image recognition would likely be used and would be referenced when decided on. Fortunately, there are plenty of such API’s on GitHub that are open sourced with detailed instructions. Furthermore, JavaScript will be used to interact with the page’s content as it allows static HTML content to be manipulated for the user and present warnings. This would be essential when fake news or spoilers are found in the content to warn the user to go back or to blur the content entirely. Integrating a machine learning algorithm that locally (for privacy) tracks how a user reacts to pages could also inform the system of what content is more interesting and would be worth considering.
+    <br><br>
+    <i>Skills Required</i><br>
+    The skills required for the project wouldn’t be hardware based, but entirely software and design based. It would likely run off of HTML, CSS and most importantly JavaScript. Developing a strong understanding and ability to write scripts in JavaScript would be necessary and essential to an effective solution. Unlike C or C++, JavaScript is closer to Java in difficulty, although they are far from the same. With enough patience and time to learn the language, the project is feasible in the time of the course. Moreover, I could always consult the experts of Stack Overflow. Another skill required would be project management and timing, to ensure that the prototype is finished on time and functions as claimed. I would also want to use UX design skills to create a GUI that is easy to read and interact with for the user.
+    <br><br>
+    <i>Outcome</i><br>
+    If the project is successful, a working prototype demonstrating the functionality of the system should be finished and integrated with a browser such as Chrome or Firefox. It may not be at the point of release worthy on extension stores, but the actual functions should work as described. The main problems of the internet may not be solved, but they will be overlaid by the system. The impact from this development likely won't change entertainment media, but could in theory change how journalism is treated online and add some accountability if it means that certain offensive articles can't bring in ad revenue after being blocked. Overall, the system could genuinely improve the internet if it had mass adoption.
+    <br><br>
+  </p>
+  </nav>
+
+
+
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+
+
+  </body>
+</html>
